@@ -55,7 +55,7 @@ export default function App() {
         setFriends(res.data)
       })
       .catch(err => {
-        debugger
+        debugger // eslint-disable-line
         console.log(err)
       })
   }
@@ -70,7 +70,7 @@ export default function App() {
         setFormValues(initialFormValues)
       })
       .catch(err => {
-        debugger
+        debugger // eslint-disable-line
         console.log(err)
       })
       .finally(() => {
@@ -87,7 +87,7 @@ export default function App() {
       // we can then run validate using the value
       .validate(value)
       // if the validation is successful, we can clear the error message
-      .then(valid => {
+      .then(valid => { // eslint-disable-line
         setFormErrors({
           ...formErrors,
           [name]: ""
