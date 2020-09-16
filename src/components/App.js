@@ -112,6 +112,16 @@ export default function App() {
   useEffect(() => {
     // 🔥 STEP 9- ADJUST THE STATUS OF `disabled` EVERY TIME `formValues` CHANGES
   }, [])
+    /* Each time the form value state is updated, check to see if it is valid per our schema. 
+  This will allow us to enable/disable the submit button.*/
+  // useEffect(() => {
+  //   /* We pass the entire state into the entire schema, no need to use reach here. 
+  //   We want to make sure it is all valid before we allow a user to submit
+  //   isValid comes from Yup directly */
+  //   formSchema.isValid(formState).then(valid => {
+  //     setButtonDisabled(!valid);
+  //   });
+  // }, [formState]);
 
   return (
     <div className='container'>
