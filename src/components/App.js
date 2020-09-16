@@ -114,12 +114,13 @@ export default function App() {
     /* We pass the entire state into the entire schema, no need to use reach here. 
     We want to make sure it is all valid before we allow a user to submit
     isValid comes from Yup directly */
-    schema.isValid(formValues).then(valid => {
-      setButtonDisabled(!valid);
-    })
+    schema.isValid(formValues)
+      .then(valid => {
+        setButtonDisabled(!valid)
+      })
   }, [formState])
-    /* Each time the form value state is updated, check to see if it is valid per our schema. 
-  This will allow us to enable/disable the submit button.*/
+  /* Each time the form value state is updated, check to see if it is valid per our schema. 
+This will allow us to enable/disable the submit button.*/
 
 
   return (
