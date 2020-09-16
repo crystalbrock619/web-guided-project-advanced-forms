@@ -72,6 +72,9 @@ export default function App() {
         debugger
         console.log(err)
       })
+      .finally(() => {
+        
+      })
   }
 
   //////////////// EVENT HANDLERS ////////////////
