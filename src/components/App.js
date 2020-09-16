@@ -94,6 +94,7 @@ export default function App() {
       // 🔥 STEP 7- WHAT ABOUT HOBBIES?
     }
     // 🔥 STEP 8- POST NEW FRIEND USING HELPER
+    postNewFriend(newFriend)
   }
 
   //////////////// SIDE EFFECTS ////////////////
