@@ -116,9 +116,9 @@ export default function App() {
     isValid comes from Yup directly */
     schema.isValid(formValues)
       .then(valid => {
-        setButtonDisabled(!valid)
+        setDisabled(!valid)
       })
-  }, [formState])
+  }, [formValues])
   /* Each time the form value state is updated, check to see if it is valid per our schema. 
 This will allow us to enable/disable the submit button.*/
 
