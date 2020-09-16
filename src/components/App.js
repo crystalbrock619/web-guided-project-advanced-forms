@@ -78,6 +78,10 @@ export default function App() {
       })
   }
 
+  const validate = (name, value) => {
+    // let's validate this specific key/value
+  }
+
   //////////////// EVENT HANDLERS ////////////////
   //////////////// EVENT HANDLERS ////////////////
   //////////////// EVENT HANDLERS ////////////////
