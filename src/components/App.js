@@ -68,7 +68,10 @@ export default function App() {
       .then(res => {
         setFriends([...friends, res.data])
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        debugger
+        console.log(err)
+      })
   };
 }
 
