@@ -3,7 +3,11 @@ import * as yup from 'yup'
 export default yup.object().shape({
   username: yup.string(),
   email: yup.string(),
-  role
+  role: yup.string(),
+  civil: yup.string(),
+  hiking: yup.boolean(),
+  reading: yup.boolean(),
+  coding: yup.boolean(),
 })
 
 // Here goes the schema for the form
