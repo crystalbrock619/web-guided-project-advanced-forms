@@ -66,7 +66,7 @@ export default function App() {
     //    and regardless of success or failure, the form should reset
     axios.post("http://localhost:4000/friends", newFriend)
       .then(res => {
-        setFriends([...friends, res.data])
+        setFriends([...friends, res.data]) // do not do this on auto
       })
       .catch(err => {
         debugger
