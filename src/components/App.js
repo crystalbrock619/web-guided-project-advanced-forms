@@ -67,13 +67,14 @@ export default function App() {
     axios.post("http://localhost:4000/friends", newFriend)
       .then(res => {
         setFriends([...friends, res.data]) // do not do this on auto
+        setFormValues(initialFormValues)
       })
       .catch(err => {
         debugger
         console.log(err)
       })
       .finally(() => {
-        
+        // this woudl be tbe good spot to clean the form
       })
   }
 
