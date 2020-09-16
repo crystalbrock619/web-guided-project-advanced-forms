@@ -119,11 +119,21 @@ export default function FriendForm(props) {
         </label>
 
         <label>Reading
-
+          <input
+            type="checkbox"
+            name="reading"
+            checked={values.reading}
+            onChange={onChange}
+          />
         </label>
 
         <label>Coding
-
+          <input
+            type="checkbox"
+            name="coding"
+            checked={values.coding}
+            onChange={onChange}
+          />
         </label>
       </div>
     </form>
