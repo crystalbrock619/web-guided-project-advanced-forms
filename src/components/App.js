@@ -7,7 +7,7 @@ import FriendForm from './FriendForm'
 // 🔥 STEP 4- IMPORT THE SCHEMA, AXIOS AND YUP
 import schema from '../validation/formSchema'
 import axios from 'axios'
-
+import * as yup from 'yup'
 
 //////////////// INITIAL STATES ////////////////
 //////////////// INITIAL STATES ////////////////
