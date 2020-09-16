@@ -80,10 +80,10 @@ export default function App() {
 
   const validate = (name, value) => {
     // let's validate this specific key/value
-        // yup.reach will allow us to "reach" into the schema and test only one part.
+    // yup.reach will allow us to "reach" into the schema and test only one part.
     // We give reach the schema as the first argument, and the key we want to test as the second.
     yup
-      .reach(formSchema, e.target.name)
+      .reach(schema, e.target.name)
       //we can then run validate using the value
       .validate(e.target.value)
       // if the validation is successful, we can clear the error message
