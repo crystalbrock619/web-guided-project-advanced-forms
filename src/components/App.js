@@ -83,6 +83,7 @@ export default function App() {
   //////////////// EVENT HANDLERS ////////////////
   const inputChange = (name, value) => {
     // 🔥 STEP 10- RUN VALIDATION WITH YUP
+    validate(name, value)
     setFormValues({
       ...formValues,
       [name]: value // NOT AN ARRAY
