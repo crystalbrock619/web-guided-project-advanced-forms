@@ -83,14 +83,14 @@ export default function App() {
     // yup.reach will allow us to "reach" into the schema and test only one part.
     // We give reach the schema as the first argument, and the key we want to test as the second.
     yup
-      .reach(schema, e.target.name)
-      //we can then run validate using the value
-      .validate(e.target.value)
+      .reach(schema, name)
+      // we can then run validate using the value
+      .validate(value)
       // if the validation is successful, we can clear the error message
       .then(valid => {
         setErrors({
           ...errors,
-          [e.target.name]: ""
+          [name]: ""
         });
       })
       /* if the validation is unsuccessful, we can set the error message to the message 
@@ -98,7 +98,7 @@ export default function App() {
       .catch(err => {
         setErrors({
           ...errors,
-          [e.target.name]: err.errors[0]
+          [name]: err.errors[0]
         });
       });
   }
